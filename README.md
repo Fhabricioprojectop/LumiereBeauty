@@ -9,9 +9,8 @@ Sistema de gestão (ERP/PDV) para loja de cosméticos e perfumaria, com site de 
 | `lumiere-beauty.html` | O sistema de gestão. É só abrir no navegador. |
 | `loja-lumiere.html` | O site de vendas online. Abra direto por esse nome. |
 | `sw.js` | Faz o sistema abrir como app no celular. Vai junto do HTML publicado. |
-| `supabase/functions/lb-integrations/` | Função do Supabase: NFC-e/NF-e, Pix, maquininha, WhatsApp e loja virtual. |
-| `supabase/functions/lb-loja/` | Função do Supabase: catálogo e pedidos do site de vendas. |
-| `docs/` | Passo a passo de cada parte. |
+| `lb-integrations.ts` | Função do Supabase: NFC-e/NF-e, Pix, maquininha, WhatsApp e loja virtual. |
+| `lb-loja.ts` | Função do Supabase: catálogo e pedidos do site de vendas. |
 
 ## O que o sistema faz
 
@@ -45,7 +44,7 @@ Sistema de gestão (ERP/PDV) para loja de cosméticos e perfumaria, com site de 
 
 1. **Supabase:** crie o projeto e a tabela `lb_records` (coll, id, data, deleted, updated_at).
 2. **Chaves:** no `lumiere-beauty.html` e no `loja-lumiere.html`, ajuste a URL e a chave anônima do projeto.
-3. **Funções:** publique `lb-integrations` e `lb-loja` (veja `docs/`). Na `lb-loja`, desligue o "Verify JWT".
+3. **Funções:** publique `lb-integrations` e `lb-loja`. Na `lb-loja`, desligue o "Verify JWT".
 4. **Integrações:** ligue o que for usar em Configurações → Integrações.
 5. **Site:** publique o `loja-lumiere.html`. Só na hora de colocar no ar com o domínio do cliente é que ele vira `index.html` — enquanto estiver testando, mantenha o nome como está.
 
