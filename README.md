@@ -7,7 +7,7 @@ Sistema de gestão (ERP/PDV) para loja de cosméticos e perfumaria, com site de 
 | Arquivo | O que é |
 |---|---|
 | `lumiere-beauty.html` | O sistema de gestão. É só abrir no navegador. |
-| `loja-lumiere.html` | O site de vendas online. Publique como `index.html`. |
+| `loja-lumiere.html` | O site de vendas online. Abra direto por esse nome. |
 | `sw.js` | Faz o sistema abrir como app no celular. Vai junto do HTML publicado. |
 | `supabase/functions/lb-integrations/` | Função do Supabase: NFC-e/NF-e, Pix, maquininha, WhatsApp e loja virtual. |
 | `supabase/functions/lb-loja/` | Função do Supabase: catálogo e pedidos do site de vendas. |
@@ -47,7 +47,16 @@ Sistema de gestão (ERP/PDV) para loja de cosméticos e perfumaria, com site de 
 2. **Chaves:** no `lumiere-beauty.html` e no `loja-lumiere.html`, ajuste a URL e a chave anônima do projeto.
 3. **Funções:** publique `lb-integrations` e `lb-loja` (veja `docs/`). Na `lb-loja`, desligue o "Verify JWT".
 4. **Integrações:** ligue o que for usar em Configurações → Integrações.
-5. **Site:** publique o `loja-lumiere.html` como `index.html` no Netlify ou no domínio do cliente.
+5. **Site:** publique o `loja-lumiere.html`. Só na hora de colocar no ar com o domínio do cliente é que ele vira `index.html` — enquanto estiver testando, mantenha o nome como está.
+
+## Como abrir para testar
+
+Os dois arquivos abrem direto, cada um pelo seu nome. Pelo GitHub Pages:
+
+- Sistema de gestão: `https://fhabricioprojectop.github.io/LumiereBeauty/lumiere-beauty.html`
+- Loja online: `https://fhabricioprojectop.github.io/LumiereBeauty/loja-lumiere.html`
+
+Abrir só o endereço da raiz mostra este README, porque não existe um `index.html` no repositório — e não precisa existir enquanto o site não for publicado no domínio.
 
 ## Avisos
 
